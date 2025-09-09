@@ -1,300 +1,137 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
-	<head>
-		<title>Untitled</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Research Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Sonia Song</h1>
+                <div class="profile-content">
+                    <div class="profile-left">
+                    <div class="profile-img">
+                        <img src="assets/image1.jpg" alt="Your Name">
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/shuyusong?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shuyu-song/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/_shuyusong" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://shuyu.substack.com/" target="_blank"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+                <div class="introduction">
+                    <p>I am a Master's student at the Berkeley School of Information. I am interested in how humans interact with AI systems. My work spans:</p>
+                    <ul>
+                        <li>LLM models (work in progress)</li>
+                        <li>Computer vision, medical AI (<a href="https://drive.google.com/file/d/1OgUOjF-BrZ6Y3k3tMz2EgJGvI1Yz2cYS/view" class="research-link">cancerpred</a>, <a href="https://drive.google.com/drive/folders/12EZaA46Oap-iOHuVOvJvjQyX7MxKg6gK" class="research-link">vehicleclass</a>)</li>
+                        <li>Graph algorithms (<a href="https://docs.google.com/presentation/d/1qDiDNwavfKkch8ucdkMkjm_ggDqSr3o1/edit?slide=id.p1#slide=id.p1" class="research-link">frauderm</a>)</li>
+                        <li>Statistical analyses (<a href="https://drive.google.com/file/d/1_HovWcbrhRbZbi9o4iB4M_nV3ofFlBCr/view" class="research-link">MAP</a>, <a href="https://drive.google.com/file/d/1d_LIj2fJ6ix8VHUcpy8ViZv7QVBW8G50/view" class="research-link">votingdiff</a>)</li>
+                    </ul>
+                    <p>I am also an experienced product engineer / product lead and have built digital platforms for financial advisors and reporting agents.</p>
+                </div>
+            </div>
+        </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <section id="research">
+            <h2>Research</h2>
+            <div class="research-items">
+                <div class="research-year">
+                    <h3 class="year-label">2025</h3>
+                    <div class="year-items">
+                        <div class="research-item">
+                            <div class="research-image">
+                                <img src="assets/project-1.jpg" alt="Research Project 1">
+                            </div>
+                            <div class="research-content">
+                                <h3>Computer Vision: Predicting Skin Cancer Types</h3>
+                                <p>Comparing different model outputs in predicting skin cancer types, including Feedforward Neural Network, Random Forest, and Convolutional Neural Network.</p>
+                                <div class="research-links">
+                                    <a href="https://docs.google.com/presentation/d/1OgUOjF-BrZ6Y3k3tMz2EgJGvI1Yz2cYS/edit?usp=drive_link&ouid=115712941358322285296&rtpof=true&sd=true" class="research-link">Presentation</a>
+                                    <a href="https://github.com/shuyusong/skincancerpred" class="research-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more 2025 projects here -->
+                         <div class="research-item">
+                            <div class="research-image">
+                                <img src="assets/project-6.jpg" alt="Research Project 1">
+                            </div>
+                            <div class="research-content">
+                                <h3>Computer Vision: Military and Civilian Vehicle Classification</h3>
+                                <p>Using computer vision techniques to classify military and civilian vehicles.</p>
+                                <div class="research-links">
+                                    <a href="https://github.com/shuyusong/vehicle-classification/blob/main/vehicle-classification-report.pdf" class="research-link">PDF</a>
+                                    <a href="https://github.com/shuyusong/vehicle-classification/blob/main/project-code.ipynb" class="research-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Sonia Song</h1>
-						<p>Building products through human creativity, pioneering technology, and a data-driven approach.</p>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/sonia-s-song/" class="icon brands fa-linkedin alt"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/soniassong" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							<li><a href="mailto: shuyu.song17@gmail.com" class="icon brands fa-solid fa-envelope alt" style="transform: rotate(90deg);"><span class="label">Email</span></a></li>
-						</ul>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Portfolio</a></li>
-							<li><a href="#second">Resume</a></li>
-							<li><a href="#cta">Contact</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-				<div id="main">
-					<!-- Introduction -->
-					<section id="intro" class="main">
-						<div class="spotlight">
-							<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-							<div class="content">
-								<header class="major">
-									<h2>ABOUT ME</h2>
-										</header>
-										<p> Hello! Welcome to my product management portal. 
-											</p>
-								
-										  <p>
-											My experience developing highly complex fintech products from concept to launch has equipped me with a deep set of skills as a product manager. Through driving innovation in mature markets, I’ve honed the ability to navigate highly sensitive customer journeys and leverage data to deliver personalized experiences. With extensive stakeholder and ecosystem collaboration, I also navigated challenging regulatory and compliance environments and developed efficiency in risk management and decision-making under uncertainty.
-										  </p>
-										  
-										  <p class="align-with-image">
-											As an advocate for technology, my master’s degree in Data Science and Machine Learning from UC Berkeley has deepened my understanding of the AI/ML landscape and strengthened my engineering skills. I’m excited to be at the forefront of generative AI applications, actively driving its transformative impact as the technology reshapes industries. 
-										  </p>
-								
-										  <p class="align-with-image">
-											Outside of work, I am a music enthusiast at my core. Growing up playing the piano and guitar has not only deepened my appreciation for musical notes but also fostered an eye for finding beauty in the arts. I carry this creative mindset into product development, where it sparks innovation in design and problem-solving.
-										  </p>
-								
-										  <p class="align-with-image">
-											Let’s connect!
-										  </p>
-										</div>
-									</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>PORTFOLIO</h2>
-								</header>									
-								<ul class="features">
-									<li>
-										<a href="https://drive.google.com/file/d/1M_xruNW_WO5WMuqHksIkLAHXV2tdMxrq/view?usp=drive_link" target="_blank">
-											<img src="images/project-2.jpg" style="height:200px; width: 300px" alt="Project 1">
-										</a>
-										<h3>Product Fundamentals: Prototyping, Prioritization, PRD Writing </h3>
-										<p>Showcasing mock product artifacts developed during the eCornell product management course.</p>
-									</li>
-									<li>
-										<a href="https://docs.google.com/presentation/d/1OgUOjF-BrZ6Y3k3tMz2EgJGvI1Yz2cYS/edit?usp=drive_link&ouid=115712941358322285296&rtpof=true&sd=true" target="_blank">
-											<img src="images/project-3.jpg" style="height:200px; width: 300px" alt="Project 1">
-										</a>
-										<h3>Computer Vision: Predicting Skin Cancer Types</h3>
-										<p>Comparing different model outputs in predicting skin cancer types, including Feedforward Neural Network, Random Forest, and Convolutional Neural Network. </p>
-									</li>
-									<li>
-										<a href="https://docs.google.com/presentation/d/1qDiDNwavfKkch8ucdkMkjm_ggDqSr3o1/edit?usp=drive_link&ouid=115712941358322285296&rtpof=true&sd=true" target="_blank">
-											<img src="images/project-4.jpg" style="height:200px; width: 300px" alt="Project 1">
-										</a>
-										<h3>FraudDerm: Using Neo4j to identify Medicare fraud</h3>
-										<p>Built relationships among providers, drugs, and procedures and three types of graph algorithms to help investigators identify potential Medicare fraud cases.</p>
-									</li>
-									<li>
-										<a href="https://drive.google.com/file/d/1_HovWcbrhRbZbi9o4iB4M_nV3ofFlBCr/view?usp=drive_link" target="_blank">
-											<img src="images/project-5.jpg" style="height:200px; width: 300px" alt="Project 1">
-										</a>
-										<h3>Analyzing Effect of Weight on Blood Pressure</h3>
-										<p>Using OLS regression to analyze the relationship between Mean Arterial Pressure (MAP) and Weight </p>
-									</li>
-									<li>
-										<a href="https://drive.google.com/file/d/1d_LIj2fJ6ix8VHUcpy8ViZv7QVBW8G50/view?usp=drive_link" target="_blank">
-											<img src="images/project-6.jpg" style="height:200px; width: 300px" alt="Project 1">
-										</a>
-										<h3>Analyzing Voting Difficulty</h3>
-										<p>Using Wilcox test to understand whether Democratic voters or Republican voters experience more difficulty voting.</p>
-									</li>
-									<li>
-										<a href="https://drive.google.com/file/d/1SWME8HczIWIWIohcwxUC6qHOOmCzYZfU/view?usp=drive_link" target="_blank">
-											<img src="images/project-7.jpg" style="height:200px; width: 300px" alt="Project 1">
-										</a>
-										<h3>Forecasting COVID-19 surges through wastewater analysis</h3>
-										<p>Designed a study to validate if the pandemic is truly over in 2024 through time-series analysis of city-level wastewater.</p>
-									</li>
-								</ul>
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Resume</h2>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-lightbulb"></span>
-										<strong>---</strong> 0-1 Product
-									</li>
-									<li class="style2">
-										<span class="icon solid fa-chart-line"></span>
-										<strong>---</strong> Data Science
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-cloud"></span>
-										<strong>---</strong> Generative AI
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-users"></span>
-										<strong>---</strong> XFN Collaboration
-									</li>
-									<li class="style5">
-										<span class="icon solid fa-clipboard-list"></span>
-										<strong>---</strong> Strategy Development
-									</li>
-								</ul>
-								
-								<section class="timeline">
-
-									<div class="title-wrapper">
-									  <div class="icon-box">
-										<ion-icon name="book-outline"></ion-icon>
-									  </div>
-						  
-									  <h3 class="h3" style="font-weight: bold;">Experience</h3>
-									</div>
-						  
-									<ol class="timeline-list" style="list-style-type: none; padding: 0; margin: 0;">
-									  
-										<li class="timeline-item">
-						
-										<h4 class="h4 timeline-item-title">Vice President, Product Management @ J.P. Morgan</h4>
-							
-										<span>2025 — Present</span>
-							
-										<p class="timeline-text">
-										</p>
-
-									  <li class="timeline-item">
-						  
-										<h4 class="h4 timeline-item-title">Product Manager @ J.P. Morgan</h4>
-						  
-										<span>2023 — 2024</span>
-						  
-										<p class="timeline-text">
-										</p>
-						  
-									  </li>
-									  <li class="timeline-item">
-
-										<h4 class="h4 timeline-item-title">Product Associate @ OpenInvest (acquired)</h4>
-						  
-										<span>2021 — 2023</span>
-						  
-										<p class="timeline-text">
-										</p>
-						  
-									  </li>
-						  
-									  <li class="timeline-item">
-						  
-										<h4 class="h4 timeline-item-title">Product Consultant @ Deloitte</h4>
-						  
-										<span>2019 — 2021</span>
-						  
-										<p class="timeline-text">
-										</p>
-						  
-									  </li>
-						  
-									</ol>
-						  
-								  </section>
-						  
-								  <section class="timeline">
-						  
-									<div class="title-wrapper">
-									  <div class="icon-box">
-										<ion-icon name="book-outline"></ion-icon>
-									  </div>
-						  
-									  <h3 class="h3" style="font-weight: bold;">Education</h3>
-									</div>
-						  
-									<ol class="timeline-list" style="list-style-type: none; padding: 0; margin: 0;">
-						  
-									  <li class="timeline-item">
-						  
-										<h4 class="h4 timeline-item-title">UC Berkeley</h4>
-						  
-										<span>2024 — Present </span>
-						  
-										<p class="timeline-text">
-										  M.S. in Computer Science
-										</p>
-						  
-									  </li>
-						  
-									  <li class="timeline-item">
-						  
-										<h4 class="h4 timeline-item-title">Yale College</h4>
-						  
-										<span>2015 — 2019</span>
-						  
-										<p class="timeline-text">
-										  B.A. in Economics
-										</p>
-						  
-									  </li>
-						  
-									</ol>
-						  
-								  </section>
-							</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Contact Me</h2>
-									<section class="contact-form">
-
-										<h3 class="h3 form-title"></h3>
-							  
-										<form action="https://formspree.io/f/movjqdnp" method="POST">
-							  
-										  <div class="input-wrapper">
-											<input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-							  
-											<input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-										  </div>
-							  
-										  <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-							  
-										  <button class="form-btn" type="submit" data-form-btn>
-											<ion-icon name="paper-plane"></ion-icon>
-											<span>Send Message</span>
-										  </button>
-							  
-										</form>
-							  
-									  </section>
-								</header>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; html5up.net & Sonia</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                <div class="research-year">
+                    <h3 class="year-label">2024</h3>
+                    <div class="year-items">
+                        <div class="research-item">
+                            <div class="research-image">
+                                <img src="assets/project-2.jpg" alt="Research Project 2">
+                            </div>
+                            <div class="research-content">
+                                <h3>FraudDerm: Using Neo4j to identify Medicare fraud</h3>
+                                <p>Built relationships among providers, drugs, and procedures and three types of graph algorithms to help investigators identify potential Medicare fraud cases.</p>
+                                <div class="research-links">
+                                    <a href="https://docs.google.com/presentation/d/1qDiDNwavfKkch8ucdkMkjm_ggDqSr3o1/edit?slide=id.p1#slide=id.p1" class="research-link">Presentation</a>
+                                    <a href="https://github.com/shuyusong/fraudderm" class="research-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more 2024 projects here -->
+                         <div class="research-item">
+                            <div class="research-image">
+                                <img src="assets/project-3.jpg" alt="Research Project 2">
+                            </div>
+                            <div class="research-content">
+                                <h3>Analyzing Effect of Weight on Blood Pressure</h3>
+                                <p>Using OLS regression to analyze the relationship between Mean Arterial Pressure (MAP) and Weight.</p>
+                                <div class="research-links">
+                                    <a href="https://drive.google.com/file/d/1_HovWcbrhRbZbi9o4iB4M_nV3ofFlBCr/view" class="research-link">PDF</a>
+                                    <a href="https://github.com/shuyusong/ols_bloodpress" class="research-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-item">
+                            <div class="research-image">
+                                <img src="assets/project-4.jpg" alt="Research Project 2">
+                            </div>
+                            <div class="research-content">
+                                <h3>Analyzing Voting Difficulty</h3>
+                                <p>Using Wilcox test to understand whether Democratic voters or Republican voters experience more difficulty voting.</p>
+                                <div class="research-links">
+                                    <a href="https://drive.google.com/file/d/1d_LIj2fJ6ix8VHUcpy8ViZv7QVBW8G50/view" class="research-link">PDF</a>
+                                    <a href="https://github.com/shuyusong/votingdiff" class="research-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-item">
+                            <div class="research-image">
+                                <img src="assets/project-5.jpg" alt="Research Project 2">
+                            </div>
+                            <div class="research-content">
+                                <h3>Forecasting COVID-19 surges through wastewater analysis</h3>
+                                <p>Designed a study to validate if the pandemic is truly over in 2024 through time-series analysis of city-level wastewater.</p>
+                                <div class="research-links">
+                                    <a href="https://drive.google.com/file/d/1SWME8HczIWIWIohcwxUC6qHOOmCzYZfU/view" class="research-link">Presentation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
 </html>

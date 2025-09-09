@@ -1,0 +1,285 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container > *:not(header) {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 3rem;
+    position: relative;
+    background: url('assets/image2.jpg') no-repeat center;
+    background-size: cover;
+    padding: 2.5rem 0;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.profile-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-left {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.8rem;
+    width: 180px;  /* Same as profile picture width */
+    justify-content: center;
+}
+
+.social-links a {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* Introduction text */
+.introduction {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.introduction p:first-child {
+    max-width: 68ch;  /* Using max-width instead of width */
+    width: fit-content;  /* Allow content to determine width */
+    display: block;  /* Ensure the width is respected */
+    box-sizing: border-box;  /* Include padding in width calculation */
+}
+
+.introduction p:last-child {
+    margin-left: -12rem;
+    width: 800px;
+}
+
+.introduction p {
+    margin-bottom: 1rem;
+}
+
+.introduction p:last-child {
+    margin-left: -12rem;  /* Keep the left alignment */
+    width: 800px;  /* Keep this wider to maintain the previous layout for the second paragraph */
+    max-width: none;  /* Remove max-width constraint */
+}
+
+.introduction ul {
+    list-style: none;
+    margin: 0.5rem 0 1.5rem 1rem;
+    padding: 0;
+}
+
+.introduction ul li {
+    text-indent: -1em;
+    padding-left: 1.5em;
+    margin-bottom: 0.25rem;
+}
+
+.introduction ul li::before {
+    content: "•";
+    padding-right: 0.5em;
+    color: #444;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+    }
+    
+    .profile-left {
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+}
+
+/* Section styles */
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Research section */
+.research-items {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.research-year {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.year-label {
+    font-size: 1.28rem;
+    color: #2c3e50;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.year-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.research-item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.research-image {
+    flex: 0 0 200px;
+}
+
+.research-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.research-content {
+    flex: 1;
+}
+
+.research-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.research-item p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.research-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.research-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.research-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for research section */
+@media (max-width: 768px) {
+    .research-item {
+        flex-direction: column;
+    }
+    
+    .research-image {
+        width: 100%;
+    }
+    
+    .research-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
